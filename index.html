@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+      <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+    />
+    <title>Login • Instagram</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      height: 100px;
+      display: block;
+      margin: auto;
+      margin-top: 220px;
+    }
+    .language {
+      color: rgb(112, 112, 112);
+      margin-top: 10px;
+      font-size: 15px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+    .dropdown {
+      height: 10px;
+    }
+    input {
+      width: 385px;
+      height: 28px;
+      display: block;
+      margin: auto;
+      border-radius: 5px;
+      padding: 10px;
+      padding-left: 20px;
+      border: 1px solid rgb(207, 207, 207);
+      background-color: rgb(248, 248, 248);
+      font-size: 16px;
+    }
+    input:active {
+      outline: none;
+    }
+    .password {
+      margin-top: 18px;
+    }
+    .txt-center {
+      text-align: center;
+    }
+    .button {
+      width: 415px;
+      height: 47px;
+      margin: auto;
+      display: block;
+      margin-top: 18px;
+      font-size: 15px;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 530;
+      font-style: normal;
+      background-color: rgba(0, 136, 255, 0.907);
+    }
+    .para {
+      margin-top: 20px;
+      font-size: 13px;
+      color: rgb(78, 78, 78);
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .divider1 {
+      width: 38%;
+      position: relative;
+      top: 24px;
+      right: -40px;
+    }
+    .divider2 {
+      width: 38%;
+      position: relative;
+      right: -260px;
+      top: 22.5px;
+    }
+    .or {
+      position: relative;
+      top: 12px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      color: rgb(101, 101, 101);
+    }
+    .loginwithfb {
+      display: block;
+      width: 195px;
+      margin: auto;
+      margin-top: 30px;
+      color: rgba(0, 136, 255, 0.907);
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 550;
+      font-style: normal;
+    }
+    .fb-logo {
+      height: 24px;
+      position: relative;
+      top: 5px;
+    }
+    .divider3 {
+      margin-top: 275px;
+    }
+    .lasttext {
+      margin-top: 13px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 450;
+      font-style: normal;
+      font-size: 13px;
+      color: rgb(94, 94, 94);
+    }
+    a {
+      text-decoration: none;
+    }
+    /* Media querie for iPhone XR, Pixel 7, Samsung Galaxy S20 Ultra, Samsung Galaxy A15/71 and iPhopne 14 Pro Max*/
+    @media only screen and (max-width: 450px) and (min-width: 400px) {
+      .header {
+        height: 35px;
+        margin-left: 73px;
+        margin-top: 10sdpx;
+      }
+      .language {
+        margin-left: -200px;
+      }
+    }
+    /* Media querie for iPhone SE, Samsung Galaxy S8+ and iPhone 12 Pro */
+    @media only screen and (max-width: 400px) and (min-width: 350px) {
+      .header {
+        height: 80px;
+        margin-left: 110px;
+        margin-top: 100px;
+      }
+      .language {
+        font-size: 10px;
+        margin-left: 15px;
+      }
+      input {
+        width: 82.5%;
+        margin-left: 15px;
+        height: 25px;
+        font-size: 13px;
+      }
+      .button {
+        width: 91.5%;
+        margin-left: 15px;
+      }
+      .para {
+        font-size: 11px;
+        margin-left: 12px;
+      }
+      .divider1 {
+        margin-left: -15px;
+        opacity: 50%;
+      }
+      .divider2 {
+        margin-left: -60px;
+        opacity: 50%;
+      }
+      .loginwithfb {
+        font-size: 14px;
+      }
+      .fb-logo {
+        height: 20px;
+        margin-left: 13px;
+      }
+      .or {
+        font-size: 13px;
+      }
+      .divider3 {
+        margin-top: 120px;
+        opacity: 40%;
+      }
+      .lasttext {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <p class="txt-center language">
+        English (United States)
+        <img
+          class="dropdown"
+          src="https://static.thenounproject.com/png/551749-200.png"
+        />
+      </p>
+      <img
+        class="header"
+        src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram-1.png"
+        alt=""
+      />
+      <form>
+        <input
+          type="text"
+          placeholder="Phone number, email or username"
+          class="email"
+        />
+        <input type="password" placeholder="Password" class="password" /><button
+          type="submit"
+          class="txt-center button"
+        >
+          Log in
+        </button>
+      </form>
+      <p class="txt-center para">
+        Forget your details?<b>Get help logging in. </b>
+      </p>
+      <hr class="divider1" />
+      <hr class="divider2" />
+      <p class="or txt-center">OR</p>
+      <a class="loginwithfb" href="https://www.facebook.com"
+        ><img
+          class="fb-logo"
+          src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png"
+        />
+        Login in with Facebook</a
+      >
+      <hr class="divider3" />
+      <p class="lasttext txt-center">Don't have an account?<b>Sign up.</b></p>
+    </div>
+  </body>
+</html>
